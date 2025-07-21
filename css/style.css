@@ -142,13 +142,11 @@ footer {
     color: White;
 }
 
-.text {
+.text-pint {
     max-width: 1320px;
     margin: 0 auto;
     padding: 70px;
-
     text-align: center;
-
 }
 
 .footer-main-text {
@@ -160,7 +158,7 @@ ul li {
     display: inline;
     margin-right: 20px;
 }
-
+/* Responcive For Mobile Phone */
 @media screen and (max-width:576px) {
 
     .header {
@@ -223,5 +221,75 @@ ul li {
 
     ul li {
         display: block;
+    }
+}
+
+
+
+/* Responcive For leptop/Tablet Phone */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .header {
+        margin: 20px 20px 0;
+    }
+    .text {
+    padding: 50px;
+    text-align: left;
+    margin-left: 10px;
+        } 
+        .dicption{
+            font-size: 14px;
+        }
+
+    .banner {
+        padding: 0;
+    }
+
+    .banner img {
+       width: 350px;
+    }
+
+    .dicption {
+        font-size: 14px;
+    }
+
+    .headerrs-text {
+        font-size: 1.9rem;
+    }
+
+    .cointner {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .right-cointner {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .card {
+        max-width: 320px;
+    }
+    .card img{
+        max-width: 320px;
+    }
+
+    .left-cointner {
+        background-color: white;
+
+    }
+
+    .left-cointner .all-btn:nth-child(1),
+    .left-cointner .all-btn:nth-child(2) {
+        background-color: aliceblue;
+        color: black;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    ul li {
+        flex-direction: column;
+    }
+    .text-pint{
+        padding: 50px;
     }
 }
