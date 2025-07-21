@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-foont {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+.header {
+
+    max-width: 1320px;
+    margin: 30px auto;
+    background-color: #161616;
+    color: white;
+    border-radius: 8px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0 0 0;
+}
+
+.text {
+    max-width: 560px;
+    margin-left: 110px;
+}
+
+.headerrs-text {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.dicption {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.banner img {
+    /* width: 100%; */
+}
+
+.all-btn {
+    margin-top: 15px;
+    padding: 13px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(235, 23, 23);
+    color: white;
+}
+
+
+/* match */
+.match {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.cointner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.left-cointner {
+    background-color: #161616;
+
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-cointner .all-btn:nth-child(1),
+.left-cointner .all-btn:nth-child(2) {
+    background-color: aliceblue;
+    color: black;
+}
+
+.right-cointner {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.card {
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 8px;
+}
+
+.cardes-body {
+    padding: 8px 0px 5px 15px;
+}
+
+.card-btn {
+    font-size: 18px;
+    padding: 9px 20px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.dic {
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 14px;
+}
+
+.logo {
+    margin-top: 25px;
+    gap: 30px;
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    height: 240px;
+    width: 330px;
+}
+
+span {
+    gap: 30px;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #161616;
+    color: White;
+}
+
+.text {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 70px;
+
+    text-align: center;
+
+}
+
+.footer-main-text {
+    margin-bottom: 40px;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+@media screen and (max-width:576px) {
+
+    .header {
+        margin: 20px 20px 0;
+    }
+    .text {
+    max-width: 100%;
+        } 
+        .dicption{
+            font-size: 14px;
+        }
+
+    .banner {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .banner img {
+        margin-top: -70px;
+        max-width: 80%;
+        margin-left: 30px;
+    }
+
+    .dicption {
+        font-size: 14px;
+    }
+
+    .headerrs-text {
+        font-size: 2rem;
+    }
+
+    .cointner {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .right-cointner {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .card {
+        max-width: 300px;
+    }
+    .card img{
+        max-width: 300px;
+    }
+
+    .left-cointner {
+        background-color: white;
+
+    }
+
+    .left-cointner .all-btn:nth-child(1),
+    .left-cointner .all-btn:nth-child(2) {
+        background-color: aliceblue;
+        color: black;
+        border: 1px solid rgb(210, 208, 208);
+    }
+
+    ul li {
+        display: block;
+    }
+}
